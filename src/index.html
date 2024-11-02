@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <script src="index.js"></script>
-</body>
-
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Patroni Pizzeria</title>
+    </head>
+    <body>
+        <section class="secao-formulario">
+            <img
+                class="logo-patroni-pizzeria"
+                src="/img/patroni-pizzeria.png"
+                alt="Logo Patroni Pizzeria"
+            />
+            <form class="container-formulario" id="form">
+                <label class="label">Valor Total da Conta:</label>
+                <input class="input" id="valorTotal" type="number" required>
+                <label class="label">Taxa de Serviço:</label>
+                <select class="select" name="" id="taxaServico" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+                <label class="label">Quantidade de Pagantes:</label>
+                <select class="select" name="" id="quantidadePagantes" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button class="botao" type="submit">Calcular</button>
+            </form>
+        </section>
+        <script src="/src/index.js"></script>
+    </body>
 </html>

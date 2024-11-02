@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.secao-formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.secao-formulario .container-formulario {
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+.secao-formulario .logo-patroni-pizzeria {
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+}
+
+.container-formulario .label {
+    margin: 5px;
+}
+
+.container-formulario .input {
+    outline: none;
+    padding: 5px;
+}
+
+.container-formulario .input,
+.container-formulario .select,
+.container-formulario .botao {
+    width: 100%;
+}
+
+.container-formulario .select {
+    padding: 5px;
+}
+
+.container-formulario .botao {
+    background-color: #284A5E;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+}
